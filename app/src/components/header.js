@@ -39,6 +39,21 @@ const header = () => {
           </InputAdornment>
       }}
       variant="outlined" />
+
+      <Grid container spacing={2} sx={{marginTop: 5}}>
+        <Grid size={7}><h1>Extension List</h1></Grid>
+        <Grid size={1}> <Button variant="contained" sx={{color: "2f354c"}}>All</Button> </Grid>
+        <Grid size={2}> <Button variant="contained">Active</Button> </Grid>
+        <Grid size={2}> <Button variant="contained" color="error">Inactive</Button> </Grid>
+      </Grid>
+      {/* //Flex box but delete later if grid works */}
+      {/* <Box sx={{alignItems: 'flex-start', marginTop: 0, order: 1}}>Extension List</Box>
+      <Box sx={{alignItems: 'flex-end', order: 2}}>All</Box>
+      <Box sx={{alignItems: 'flex-end'}}>Active</Box>
+      <Box sx={{alignItems: 'flex-end'}}>Inactive</Box> */}
+      {/* End of flex box code  */}
+
+
       {/* <Paper
       component="form"
       sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
