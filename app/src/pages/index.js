@@ -7,8 +7,10 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
 import Header from "../components/header"
+import Home from "../components/home";
 import Container from "@mui/material/Container"
 import Box from "@mui/material/Box"
+
 
 
 const IndexPage = () => (
@@ -16,6 +18,7 @@ const IndexPage = () => (
  <Box sx={{display: 'flex', justifyContent: 'center', marginTop: "8px"}}>
   <Container maxWidth="md">
     <Header/>
+    <Home/>
   </Container>
  </Box>
   
