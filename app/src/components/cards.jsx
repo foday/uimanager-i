@@ -9,20 +9,27 @@ import Button from '@mui/material/Button'
 import Grid from '@mui/material'
 import Box from '@mui/material'
 import Container from '@mui/material'
+import LoupeIcon from '@mui/icons-material/Loupe';
 
 const cards = (props) => {
-    // const icons = props.icons
+    
+    const icons = props.icons
     const title = props.title;
     const subheader = props.subheader;
 
   return (
     <div>
         <Card sx={{maxWidth: 345}}>
+            <CardContent>
+                <LoupeIcon/>
+            </CardContent>
+
             <CardHeader 
-            // icons={props.icons}
+            icons={props.icons}
             title={props.title}
             subheader={props.subheader}
             />
+            
 
         </Card>
         

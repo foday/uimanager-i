@@ -17,7 +17,7 @@ import Box from '@mui/material/Box';
 const header = () => {
   return (
     <div>
-      <TextField sx={{width: 800,
+      <TextField sx={{width: 825,
         '& .MuiOutlinedInput-nothchedOutline': {
           borderWidth: '2px',
         }
