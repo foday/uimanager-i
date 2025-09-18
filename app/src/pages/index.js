@@ -10,6 +10,9 @@ import Header from "../components/header"
 import Home from "../components/home";
 import Container from "@mui/material/Container"
 import Box from "@mui/material/Box"
+import LoupeIcon from '@mui/icons-material/Loupe';
+import Cards from "../components/mycards"
+import AcUnitIcon from '@mui/icons-material/AcUnit';
 
 
 
@@ -18,6 +21,9 @@ const IndexPage = () => (
  <Box sx={{display: 'flex', justifyContent: 'center', marginTop: "8px"}}>
   <Container maxWidth="md">
     <Header/>
+    {/* <Cards Icon={LoupeIcon} />
+   <Cards Icon={AcUnitIcon} /> */}
+
     <Home/>
   </Container>
  </Box>

@@ -2,9 +2,13 @@ import React from 'react'
 import Button from "@mui/material/Button"
 import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper';
-import Cards from "./cards";
+import Cards from "./mycards";
 import LoupeIcon from '@mui/icons-material/Loupe';
-import { CardContent, Grid } from '@mui/material';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardContent from '@mui/material/CardContent';
+import Grid from '@mui/material/Grid';
+import Icon from '@mui/material/Icon';
+// import { CardActionArea, CardContent, Grid, Icon } from '@mui/material';
 
 
 const home = () => {
@@ -14,22 +18,29 @@ const home = () => {
         <Button variant="contained" color="primary" style={{ marginBottom: '20px' }}>All</Button>
         <Button variant='contained' color='secondary' style={{ marginBottom: '20px' }}>Active</Button>
         <Button variant='contained' color='success' style={{ marginBottom: '20px' }}>Inactive</Button> */}
-        <Grid container spacing={3}>
-          <Grid size={4}>
+        <Grid container spacing={3} alignItems={"stretch"}>
+          {/* Card 1 -------------------------------------------- */}
+          <Grid size={4} xs={12} sm={6} md={4} lg={3} xl={2}>
             <Cards
+              sx={{height: "100%"}}
               title="DevLens" 
               subheader="Quickly inspect page layouts and visualize element boundaries"
-          //  icons={LoupeIcon}
+              Icons={<LoupeIcon/>}
+              // <Cards Icon={LoupeIcon} />
+          //  icons="LoupeIcon"
             >
-              <CardContent>
-                <LoupeIcon/>
-              </CardContent>
+                
+              
             </Cards>
           </Grid>
+
+          {/* Card 2 -------------------------------------------- */}
           <Grid size={4}>
-            <Cards title="StyleSpy" 
+            <Cards 
+            sx={{height: "100%"}}
+            title="StyleSpy" 
               subheader="Instantly analyze and copy CSS from any webpage element"
-          // icons={LoupeIcon}
+          Icons={<LoupeIcon/>}
         />
           </Grid>
           <Grid size={4}>
