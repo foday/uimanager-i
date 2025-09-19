@@ -9,7 +9,12 @@ import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
 import Icon from '@mui/material/Icon';
 // import { CardActionArea, CardContent, Grid, Icon } from '@mui/material';
-
+import DataArrayIcon from '@mui/icons-material/DataArray';
+import TimerIcon from '@mui/icons-material/Timer';
+import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
+import FilterListIcon from '@mui/icons-material/FilterList';
+import SaveAsIcon from '@mui/icons-material/SaveAs';
+import AspectRatioIcon from '@mui/icons-material/AspectRatio';
 
 const home = () => {
   return (
@@ -39,39 +44,50 @@ const home = () => {
             <Cards 
             sx={{height: "100%"}}
             title="StyleSpy" 
-              subheader="Instantly analyze and copy CSS from any webpage element"
-          Icons={<LoupeIcon/>}
-        />
-          </Grid>
-          <Grid size={4}>
-            <Cards title="SpeedBoost" 
-              subheader="Optimizes browser resource usage to accelerate page loading."
-          // icons={LoupeIcon}
+            subheader="Instantly analyze and copy CSS from any webpage element"
+            Icons={<DataArrayIcon/>}
         />
           </Grid>
 
+          {/* Card 3 --------------------------------------------- */}
           <Grid size={4}>
-            <Cards title="JSONWizard" 
-              subheader="Formats, validates, and prettifies JSON responses in-browser."
-           // icons={LoupeIcon}
+            <Cards 
+            sx={{height: "100%"}}
+            title="SpeedBoost" 
+            subheader="Optimizes browser resource usage to accelerate page loading."
+            Icons={<TimerIcon/>}
+        />
+          </Grid>
+
+          {/* Card 4 --------------------------------------------- */}
+          <Grid size={4}>
+            <Cards 
+            title="JSONWizard" 
+            subheader="Formats, validates, and prettifies JSON responses in-browser."
+            Icons={<AutoFixHighIcon/>}
         /></Grid>
           
+          {/* Card 5 ---------------------------------------------- */}
           <Grid size={4}>
-            <Cards title="TabMaster Pro" 
-              subheader="Organizes browser tabs into groups and sessions."
-           // icons={LoupeIcon}
+            <Cards 
+            title="TabMaster Pro" 
+            subheader="Organizes browser tabs into groups and sessions."
+            Icons={<FilterListIcon/>}
+        /></Grid>
+
+          {/* Card 6 ---------------------------------------------- */}
+          <Grid size={4}>
+            <Cards 
+            title="ViewportBuddy" 
+            subheader="Simulates various screen resolutions directly within the browser."
+            Icons={<AspectRatioIcon/>}
         /></Grid>
 
 <Grid size={4}>
-            <Cards title="ViewportBuddy" 
-              subheader="Simulates various screen resolutions directly within the browser."
-           // icons={LoupeIcon}
-        /></Grid>
-
-<Grid size={4}>
-            <Cards title="Markup Notes" 
-              subheader="Enables annotation and notes directly onto webpages for collaborative debugging"
-           // icons={LoupeIcon}
+            <Cards 
+            title="Markup Notes" 
+            subheader="Enables annotation and notes directly onto webpages for collaborative debugging"
+            Icons={<SaveAsIcon/>}
         /></Grid>
 
 <Grid size={4}>
