@@ -15,6 +15,13 @@ import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import SaveAsIcon from '@mui/icons-material/SaveAs';
 import AspectRatioIcon from '@mui/icons-material/AspectRatio';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import ColorizeIcon from '@mui/icons-material/Colorize';
+import LinkOffIcon from '@mui/icons-material/LinkOff';
+// import BrokenLink from "../images/logo-link-checker"
+import CodeIcon from '@mui/icons-material/Code';
+import BathroomIcon from '@mui/icons-material/Bathroom';
+
 
 const home = () => {
   return (
@@ -82,7 +89,7 @@ const home = () => {
             subheader="Simulates various screen resolutions directly within the browser."
             Icons={<AspectRatioIcon/>}
         /></Grid>
-
+              {/* Card 7 ------------------------------------------- */}
 <Grid size={4}>
             <Cards 
             title="Markup Notes" 
@@ -90,34 +97,41 @@ const home = () => {
             Icons={<SaveAsIcon/>}
         /></Grid>
 
+            {/* Card 8 --------------------------------------------- */}
 <Grid size={4}>
-            <Cards title="GridGuides" 
-              subheader="Overlay customizable grids and alignment guides on any webpage"
-           // icons={LoupeIcon}
+            <Cards 
+            title="GridGuides" 
+            subheader="Overlay customizable grids and alignment guides on any webpage"
+            Icons={<DashboardIcon/>}
         /></Grid>
 
+            {/* Card 9 --------------------------------------------- */}
 <Grid size={4}>
-            <Cards title="Palette Picker" 
-              subheader="Instantly extracts color palettes from any webpage"
-           // icons={LoupeIcon}
+            <Cards 
+            title="Palette Picker" 
+            subheader="Instantly extracts color palettes from any webpage"
+            Icons={<ColorizeIcon/>}
         /></Grid>
           
           <Grid size={4}>
-            <Cards title="LinkChecker" 
-              subheader="Scans and highlights broken links on any page"
-           // icons={LoupeIcon}
+            <Cards 
+            title="LinkChecker" 
+            subheader="Scans and highlights broken links on any page"
+            Icons={<LinkOffIcon/>}
         /></Grid>
 
 <Grid size={4}>
-            <Cards title="DOM Snapshot" 
-              subheader="Capture and export DOM structures quickly"
-           // icons={LoupeIcon}
+            <Cards 
+            title="DOM Snapshot" 
+            subheader="Capture and export DOM structures quickly"
+            Icons={<BathroomIcon/>}
         /></Grid>
 
 <Grid size={4}>
-            <Cards title="ConsolePlus" 
-              subheader="Enhanced developer console with advanced filtering and logging."
-           // icons={LoupeIcon}
+            <Cards 
+            title="ConsolePlus" 
+            subheader="Enhanced developer console with advanced filtering and logging."
+            Icons={<CodeIcon/>}
         /></Grid>
           
 
